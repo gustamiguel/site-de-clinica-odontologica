@@ -1,0 +1,154 @@
+:root {
+    --bs-primary: #f8cacc;
+    --bs-primary-rgb: 248, 202, 204;
+    --bs-secondary: #b29e6c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333333;
+}
+
+.navbar {
+    background-color: var(--bs-primary);
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    background-color: var(--bs-secondary);
+    font-weight: bold;
+    margin-right: 15px;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--bs-secondary);
+    color: #ffffff;
+}
+
+.container-main {
+    margin-top: 20px;
+}
+
+.paciente-info {
+    border: 1px solid var(--bs-primary);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: var(--bs-primary);
+    transition: box-shadow 0.3s;
+}
+
+.paciente-info:hover {
+    box-shadow: 0 6px 8px rgba(110, 76, 77, 0.2);
+}
+
+.foto-paciente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 9em;
+}
+
+.paciente-info h5 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.paciente-info p {
+    margin: 5px 0;
+}
+
+.paciente-actions .btn {
+    margin-right: 5px;
+}
+
+.btn-cadastrar {
+    background-color: var(--bs-secondary);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn-cadastrar:hover {
+    background-color: #a08c3a;
+}
+
+.data-prontuario {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    display: inline-block;
+}
+
+
+.prontuario-section {
+    display: none;
+    border: 1px solid var(--bs-primary);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    margin-top: 15px;
+}
+
+.paciente-info.active .prontuario-section {
+    display: block;
+}
+
+#diagnostico, #procedimento, #descricao {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.paciente-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.paciente-actions .btn {
+    flex: 1;
+    margin: 5px;
+}
+
+.paciente-info {
+    padding: 10px; /* Ajuste o padding para reduzir a altura */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .paciente-actions {
+        justify-content: center;
+        
+    }
+
+    .paciente-actions .btn {
+        flex: 1 0 48%;
+        text-align: center;
+    }
+    .foto-paciente {
+        display: none;
+    }
+    .d-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+}
+
