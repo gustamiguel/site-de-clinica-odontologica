@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Odontológica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,60 +19,60 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#servicos">Nossos Serviços</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#descricao">Descrição</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#agendamento">Agendamento</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#footer">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section id="servicos" class="container my-5"></section>
-    <h2 class="text-center text-primary">Nossos Serviços</h2>
-    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <div class="mobile-nav-container">
+        <div class="bg-mobile">
+            <button class="mobile-menu-toggle">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/clinicageral.jpg" class="d-block w-100" alt="Primeiro Slide">
-            </div>
-            <div class="carousel-item">
-                <img src="img/restauracao.jpg" class="d-block w-100" alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img src="img/profilaxia.jpg" class="d-block w-100" alt="Terceiro Slide">
-            </div>
-            <div class="carousel-item">
-                <img src="img/protese.jpg" class="d-block w-100" alt="Quarto Slide">
-            </div>
-            <div class="carousel-item">
-                <img src="img/clareamento.jpg" class="d-block w-100" alt="Quinto Slide">
-            </div>
+        
+        <div class="mobile-nav-buttons">
+            <a href="#descricao">Descrição</a>
+            <a href="#agendamento">Agendamento</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
     </div>
     
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
+
+    <section id="servicos" class="container my-5">
+        <h2 class="text-center text-primary">Nossos Serviços</h2>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/clinicageral.jpg" class="d-block w-100" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/restauracao.jpg" class="d-block w-100" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/profilaxia.jpg" class="d-block w-100" alt="Terceiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/protese.jpg" class="d-block w-100" alt="Quarto Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/clareamento.jpg" class="d-block w-100" alt="Quinto Slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
 
     <section id="descricao" class="container my-5">
         <h2 class="text-center text-primary">Descrição</h2>
@@ -159,24 +160,6 @@
         </form>
     </section>
 
-    <section id="contato" class="container my-5">
-        <h2 class="text-center text-primary">Contato</h2>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <p class="text-truncate" title="Av. Cadige Faitarone Feres, 358, Clínica CDA laboratório">Endereço: Av. Cadige Faitarone Feres, 358, Clínica CDA laboratório</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <p>Cidade: Fronteira MG</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <p>Telefone: (34) 99151-8142 / (34) 99282-3409</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <p>Instagram: consultorio.helaine_vieira</p>
-            </div>
-        </div>
-    </section>
-
     <section id="sobre" class="container my-5">
         <h2 class="text-center text-primary">Sobre a Dentista e Localização da Clínica</h2>
         <div class="row">
@@ -212,11 +195,27 @@
         </div>
     </section>
 
-    <footer class="bg-primary text-white py-3">
-        <div class="container text-center">
-            <p>&copy; 2024 Clínica Odontológica Helaine Vieira. Todos os direitos reservados.</p>
+    <footer class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h3>CONTATO</h3>
+            <div class="footer-item mb-3">
+                <p><i class="bi bi-geo-alt"></i> Endereço: Av. Cadige Faitarone Feres, 358, Clínica CDA laboratório</p>
+            </div>
+            <div class="footer-item mb-3">
+                <p><i class="bi bi-house-door"></i> Fronteira / MG</p>
+            </div>
+            <div class="footer-item mb-3">
+                <p><i class="bi bi-telephone"></i> (34) 99282-3409 | (34) 99151-8142</p>
+            </div>        
+            <div class="footer-item mb-3">
+                <p><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/consultorio.helaine_vieira" target="_blank" class="text-decoration-none">consultorio.helaine_vieira</a></p>
+            </div>
+            <br>
+            <p class="mb-0">&copy; 2024 Clínica Odontológica. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
+
 
     <script>
         const tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
@@ -302,6 +301,50 @@
                     }
                     $(this).val(telefone);
                 });
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                if (window.innerWidth <= 768) {
+                    const carousel = document.querySelector('#carouselExampleIndicators');
+                    const carouselInstance = new bootstrap.Carousel(carousel, {
+                        interval: 2000,
+                        ride: 'carousel'
+                    });
+                    carousel.addEventListener('touchstart', (e) => {
+                        const startX = e.touches[0].clientX;
+                        carousel.addEventListener('touchmove', (e) => {
+                            const diffX = e.touches[0].clientX - startX;
+                            if (diffX > 50) {
+                                carouselInstance.prev();
+                            } else if (diffX < -50) {
+                                carouselInstance.next();
+                            }
+                        }, { once: true });
+                    });
+                }           
+            });
+            document.querySelectorAll('.mobile-nav-buttons a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    const offset = 280; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
+                const navButtons = document.querySelector('.mobile-nav-buttons');
+                if (navButtons.style.display === 'block') {
+                    navButtons.style.display = 'none';
+                    window.scrollBy(0, 170);
+                } else {
+                    navButtons.style.display = 'block';
+                }
             });
             
         </script>

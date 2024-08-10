@@ -1,179 +1,274 @@
-    :root {
-        --bs-primary: #f8cacc;
-        --bs-primary-rgb: 248, 202, 204;
-        --bs-secondary: #b29e6c;
-    }
+:root {
+    --bs-primary: #f8cacc;
+    --bs-primary-rgb: 248, 202, 204;
+    --bs-secondary: #b29e6c;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff;
-        color: #333333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
 
-    nav ul {
-        margin: 0;
-        padding: 0;
-    }
+nav ul {
+    margin: 0;
+    padding: 0;
+}
 
-    nav a[href="#servicos"],
-    nav a[href="#agendamento"],
-    nav a[href="#contato"] {
-        color: var(--bs-secondary);
-    }
+nav a[href="#servicos"],
+nav a[href="#agendamento"],
+nav a[href="#contato"] {
+    color: var(--bs-secondary);
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .h3 {
-        font-weight: bold;
-        font-size: 2em;
-    }
+.h3 {
+    font-weight: bold;
+    font-size: 2em;
+}
 
-    .text-primary {
-        color: var(--bs-secondary) !important;
-        font-weight: bold;
-        font-size: 1.6em;
-    }
+.text-primary {
+    color: var(--bs-secondary) !important;
+    font-weight: bold;
+    font-size: 1.6em;
+}
 
-    section {
-        margin-bottom: 40px;
-    }
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
 
-    ul li.list-group-item {
-        margin: 5px 0;
-        padding: 10px;
-        background-color: var(--bs-primary);
-        border-radius: 10px;
-        border: 1px solid var(--bs-primary);
-        color: #ffffff;
-        text-decoration: none;
-    }
+ul li.list-group-item {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: var(--bs-primary);
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 2px 4px 6px rgba(110, 76, 77, 0.2);
+}
 
-    ul li.list-group-item a {
-        color: #ffffff;
-        text-decoration: none;
-    }
+ul li.list-group-item:hover{
+    background-color: var(--bs-secondary);
+    transition-duration: 0.5s;
+}
 
-    ul li.list-group-item a:hover {
-        background-color: #b29e6c;
-        color: #ffffff;
-    }
+ul li.list-group-item a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
 
-    ul li.list-group-item:first-child {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
+ul li.list-group-item a:hover {
+    
+    color: #ffffff;
+}
 
-    ul li.list-group-item:last-child {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+ul li.list-group-item:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
 
-    form label {
-        display: block;
-        margin: 10px 0 5px;
-    }
+ul li.list-group-item:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
 
-    form input, form button {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0 20px;
-        border-radius: 5px;
-        border: 1px solid;
-    }
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
 
-    form input.is-invalid, form select.is-invalid, form textarea.is-invalid {
-        border-color: #dc3545;
-    }
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    border: 1px solid;
+}
 
-    form input.is-valid, form select.is-valid, form textarea.is-valid {
-        border-color: #28a745;
-    }
+form input.is-invalid, form select.is-invalid, form textarea.is-invalid {
+    border-color: #dc3545;
+}
 
-    form button.btn-primary {
-        background-color: var(--bs-primary);
-        border-color: var(--bs-primary);
-        color: #ffffff;
-    }
+form input.is-valid, form select.is-valid, form textarea.is-valid {
+    border-color: #28a745;
+}
 
-    form button.btn-primary:hover {
-        background-color: #b29e6c;
-        border-color: #b29e6c;
-    }
+form button.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #ffffff;
+    box-shadow: 2px 4px 6px rgba(110, 76, 77, 0.2);
+}
 
-    footer {
-        background-color: var(--bs-primary);
-        color: #ffffff;
-    }
+form button.btn-primary:hover {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    transition-duration: 0.3s;
+}
 
-    .invalid-feedback {
-        display: block;
-    }
+.invalid-feedback {
+    display: block;
+}
 
-    .card-body {
-        color: #000;
-    }
+.card-body {
+    color: #000;
+}
 
-    .card-img-custom {
-        height: 500px;
-        object-fit: cover;
+.card-img-custom {
+    height: 500px;
+    object-fit: cover;
+}
+
+#carouselExampleIndicators {
+    width: 85%;
+    margin: 0 auto;
+    max-height: 500px;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000000;
+    border: 1px solid;
+    padding: 20px 17px;
+    border-radius: 30%;
+    background-size: 70%;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 0%;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-inner {
+    margin-top: 40px;
+}
+
+.card-img-top {
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%; 
+}
+
+.logo-container {
+    background-color: var(--bs-primary); 
+    padding: 20px;
+    border-radius: 0.5rem;
+    text-align: center; 
+}
+
+.logo-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--bs-secondary);
+}
+
+.mobile-nav-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--bs-primary);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bg-mobile {
+    position: sticky;
+    background-color: var(--bs-primary);
+    height: 35px;
+}
+
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.mobile-nav-buttons {
+    display: none;
+    background-color: var(--bs-primary);
+    padding: 10px;
+    text-align: center;
+}
+
+.mobile-nav-buttons a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+    margin: 5px auto;
+    text-decoration: none;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
     }
 
     #carouselExampleIndicators {
-        width: 85%;
-        margin: 0 auto;
-        max-height: 500px;
-    }
-
-    .carousel-inner img {
-        object-fit: cover;
-        height: 500px;
         width: 100%;
     }
-
-    .carousel-inner {
-        margin-top: 40px;
-    }
-
-    .card-img-top {
-        height: 400px; 
-        object-fit: cover; 
-    }
-
-    .carousel-item img {
-        width: 100%;
-        height: 100%; 
-    }
-
-    .logo-container {
-        background-color: var(--bs-primary); 
-        padding: 20px;
-        border-radius: 0.5rem;
-        text-align: center; 
-    }
-
-    .logo-container img {
-        max-width: 80%;
-        height: auto;
-    }
-
-    .welcome-text {
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-    .form-shadow {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-
+}
