@@ -35,6 +35,7 @@
         </div>
         
         <div class="mobile-nav-buttons">
+            <a href="#servicos">Nossos Serviços</a>
             <a href="#descricao">Descrição</a>
             <a href="#agendamento">Agendamento</a>
             <a href="#sobre">Sobre</a>
@@ -327,7 +328,7 @@
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    const offset = 280; 
+                    const offset = 320; 
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - offset;
             
@@ -341,7 +342,7 @@
                 const navButtons = document.querySelector('.mobile-nav-buttons');
                 if (navButtons.style.display === 'block') {
                     navButtons.style.display = 'none';
-                    window.scrollBy(0, 170);
+                    window.scrollBy(0, 200);
                 } else {
                     navButtons.style.display = 'block';
                 }
